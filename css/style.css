@@ -17,6 +17,52 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Light.woff2) format('woff2');
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Regular.woff2) format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Medium.woff2) format('woff2');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-SemiBold.woff2) format('woff2');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-Bold.woff2) format('woff2');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --color-white: #fff;
+  --color-gary: #838383;
+  --color-dark: #1d1d1f;
 }
