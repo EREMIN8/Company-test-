@@ -120,6 +120,7 @@ body {
   text-align: center;
   color: var(--color-dark);
   background-color: var(--color-light);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .btn--light {
@@ -127,9 +128,20 @@ body {
   background-color: var(--color-light);
 }
 
+.btn--light:hover {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
 .btn--dark {
   color: var(--color-light);
   background-color: var(--color-dark);
+}
+
+.btn--dark:hover {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  outline: 1px solid var(--color-dark);
 }
 
 .grid {
@@ -171,6 +183,10 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: var(--color-light);
+  transition: color 0.3s ease-in-out;
+}
+.nav__link:hover {
+  color: var(--color-grey);
 }
 
 .logo {
@@ -184,13 +200,20 @@ body {
   margin-right: 35px;
   width: 24px;
   height: 24px;
+  color: var(--color-light);
+  transition: color 0.3s ease-in-out;
 }
 
-.header__btn svg {
+.header__search svg {
   display: block;
   width: 100%;
   height: 100%;
+  stroke: currentColor;
   object-fit: cover;
+}
+
+.header__search:hover {
+  color: var(--color-grey);
 }
 
 .hero {
@@ -288,13 +311,20 @@ body {
   width: 100px;
   height: 100px;
   transform: translate(-50%, -50%);
+  color: var(--color-light);
+  transition: color 0.3s ease-in-out;
 }
 
 .about__play svg {
   display: block;
   width: 100%;
   height: 100%;
+  fill: currentColor;
   object-fit: cover;
+}
+
+.about__play:hover {
+  color: var(--color-grey);
 }
 
 .about__play--hidden {
@@ -446,13 +476,20 @@ body {
   display: block;
   width: 40px;
   height: 40px;
+  color: var(--color-light);
 }
 
 .social__link svg {
   display: block;
   width: 100%;
   height: 100%;
+  fill: currentColor;
   object-fit: cover;
+  transition: color 0.3s ease-in-out;
+}
+
+.social__link:hover {
+  color: var(--color-grey);
 }
 
 .footer__title {
